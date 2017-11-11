@@ -52,7 +52,7 @@ def get_random_record(seq_num=0, desired_len=50):
     pk = str(uuid.uuid4())
     ehk = str(uuid.uuid4().int)
 
-    data = 'RECORD %d ' % (seq_num)
+    data = 'RECORD %d ' % seq_num
     while len(data) < (desired_len - 1):
         data += ALPHABET[random.randrange(0, len(ALPHABET))]
     data += '\n'
@@ -109,8 +109,8 @@ if __name__ == '__main__':
     # For details on how to supply AWS credentials to boto3, see:
     # https://boto3.readthedocs.org/en/latest/guide/configuration.html
 
-    RECORD_SIZE_BYTES = 1024
-    RECORDS_TO_TRANSMIT = 1024
+    RECORD_SIZE_BYTES = 128
+    RECORDS_TO_TRANSMIT = 20
 
     if len(sys.argv) != 3:
         print("USAGE: python kinesis_publisher.py <stream name> <region>", file=sys.stderr)

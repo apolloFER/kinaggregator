@@ -27,17 +27,11 @@ def read_file(filename):
 setup(
     name='kinaggregator',
     packages=['kinaggregator'],
-    version='0.0.1',
-    description='Python module to assist in taking advantage of the Kinesis message aggregation format for both aggregation and deaggregation.',
+    version='0.1.1',
+    description='Python module to assist in taking advantage of the Kinesis message aggregation format for both aggregation and deaggregation. Based on aws_kinesis_agg.',
     long_description=read_file('README.md'),
-    author=[
-        'Brent Nash',
-        'Darko Ronic'
-    ],
-    author_email=[
-        'brenash@amazon.com',
-        "darko.ronic@gmail.com"
-    ],
+    author='Darko Ronic',
+    author_email='darko.ronic@gmail.com',
     license='SEE LICENSE IN LICENSE',
     url='http://github.com/apolloFER/kinesis-aggregation-python',
     keywords=['aws', 'kinesis', 'aggregation', 'deaggregation', 'kpl'],
@@ -49,6 +43,7 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Utilities'
