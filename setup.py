@@ -33,7 +33,7 @@ setup(
     author='Darko Ronic',
     author_email='darko.ronic@gmail.com',
     license='SEE LICENSE IN LICENSE',
-    url='http://github.com/apolloFER/kinesis-aggregation-python',
+    url='http://github.com/apolloFER/kinaggregator',
     keywords=['aws', 'kinesis', 'aggregation', 'deaggregation', 'kpl'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
