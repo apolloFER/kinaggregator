@@ -394,7 +394,7 @@ class AggRecord(object):
             return False
 
         record = self.agg_record.records.add()
-        record.data = data.encode()
+        record.data = data
 
         pk_add_result = self.partition_keys.add_key(partition_key)
         if pk_add_result[0]:
@@ -428,7 +428,7 @@ class AggRecord(object):
         hash_key = 0
 
         md5_calc = hashlib.md5()
-        md5_calc.update(partition_key)
+        md5_calc.update(partition_key.encode())
         pk_digest = md5_calc.hexdigest()
 
         for i in range(0, kinaggregator.DIGEST_SIZE):

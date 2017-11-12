@@ -27,7 +27,7 @@ def read_file(filename):
 setup(
     name='kinaggregator',
     packages=['kinaggregator'],
-    version='0.1.1',
+    version='0.1.2',
     description='Python module to assist in taking advantage of the Kinesis message aggregation format for both aggregation and deaggregation. Based on aws_kinesis_agg.',
     long_description=read_file('README.md'),
     author='Darko Ronic',
